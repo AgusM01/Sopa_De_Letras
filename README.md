@@ -29,8 +29,10 @@ Como salida, se obtendrá un archivo txt llamado **Salida** el cual contendrá l
 ##### Forma del archivo
 DIMENSION
 int (numero entero que representa la dimension)
+
 PALABRAS
 (palabras elegidas por el programa al azar una debajo de la otra)
+
 COMPLEJIDAD
 int(numero entero que representa la complejidad)
 
