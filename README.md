@@ -38,12 +38,19 @@ int(numero entero que representa la complejidad)
 
 ##### Ejemplo de salida
 DIMENSION
+
 6
+
 PALABRAS
+
 computacion
+
 codigo
+
 teorema
+
 COMPLEJIDAD
+
 3
 
 ## Programa en Python
