@@ -7,7 +7,7 @@ La sopa de letras posee 3 dificultades las cuales son:
 - Medio: Palabras horizontales de izquierda a derecha, verticales de arriba a abajo o diagonales de esquina sup. izq a esquina inf. der. (Complejidad = 1)
 - Dificil: Palabras en horizontal, vertical o diagonal sin restricciones.(Complejidad = 2)
 - Muy Dificil: Las palabras se pueden cortar, es decir, pueden compartir palabras.(Complejidad = 3)
-
+En el repositoro se dará un archivo llamado **lemario.txt** el cual contendrá palabras para así poder jugar al juego de manera inmediata.
 ## Programa en C
 El programa en C se encarga de crear un archivo el cuál contendrá las caracteristicas de la sopa de letras a jugar. Este archivo posteriormente será ingresado al programa en Python.
 
