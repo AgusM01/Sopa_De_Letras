@@ -152,6 +152,6 @@ La implementacion seria:
 
 
 La ultima funcion de todas es la llamada ``test``, la cual mediante el uso de ``assert``, permite el testeo del correcto funcionamiento de las funciones que son posibles de testear.
-
-##ARREGLO DE EFICIENCIA
+__________________________________________________________________________________________________________________________________________________________________
+ARREGLO DE EFICIENCIA
 El programa sería eficiente si en lugar de intentar ubicar las palabras un numero finito de intentos en el tablero, se utilizaria el algoritmo conocido como "Backtracking" donde se haria una iteracion o recursividad que permitiria checkear si la palabra puede entrar en el tablero lo cual en caso positivo la ubicaria y en caso negativo volvería al nodo anterior asi se genera un nuevo tablero en el cual se volvería a checkear si la palabra puede ser ubicada.
