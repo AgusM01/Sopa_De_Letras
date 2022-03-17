@@ -73,7 +73,8 @@ void archivo_salida(int CantPalabras, int k, int Dimension, int Complejidad, lon
     int numeros_elegidos[CantPalabras], bandera = 0;
     
     for (int i = 0; i < CantPalabras; i++){ //Elección de palabras a ubicar en la sopa de letras
-        while (bandera != i){ //Verifico que los numeros no hayan sido previamente elegidos
+        while ((strlen(palabras_archivo[r]) > Dimension + 1)){ //Checkea si la palabra puede caber en la sopa de letras
+            while (bandera != i){ //Verifico que los numeros no hayan sido previamente elegidos
             r = random() % k;
             for (int k = 0; k < i; k++){
                 
@@ -85,10 +86,8 @@ void archivo_salida(int CantPalabras, int k, int Dimension, int Complejidad, lon
                 }       
             }           
         }
-        bandera = 0; //Reinicio la bandera
-        while ((strlen(palabras_archivo[r]) > Dimension + 1)){ //Checkea si la palabra puede caber en la sopa de letras
-            r = random() % k;
         }
+        bandera = 0; //Reinicio la bandera
         numeros_elegidos[i] = r;
         fputs(palabras_archivo[r], SalidaC);
     }
@@ -142,9 +141,7 @@ int main (){
     //TOMA DE PALABRAS DEL LEMARIO Y GUARDADO EN UN ARRAY DE PUNTEROS A PUNTEROS DE CARACTERES
 
     while (fgets(PalabraLeida, BUFFER, lemario) != NULL){  //Recorre el lemario hasta el final
-        
-        fgets(PalabraLeida, BUFFER, lemario); //Va tomando las palabras 
-        
+         
         if (k == t_bloque){
             palabras_archivo = realloc(palabras_archivo, sizeof(char*)*(2 * t_bloque)); //Cuando k llega al final de la memoria, pido más con realloc. 
             t_bloque = t_bloque*2; //Aumenta la variable que será el bloque a pedir
